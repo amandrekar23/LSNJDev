@@ -1,0 +1,14 @@
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\bin\Debug\net6.0\EventsSolution.Context.deps.json
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\bin\Debug\net6.0\EventsSolution.Context.runtimeconfig.json
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\bin\Debug\net6.0\EventsSolution.Context.dll
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\bin\Debug\net6.0\EventsSolution.Context.pdb
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\obj\Debug\net6.0\EventsSolution.Context.csproj.AssemblyReference.cache
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\obj\Debug\net6.0\EventsSolution.Context.GeneratedMSBuildEditorConfig.editorconfig
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\obj\Debug\net6.0\EventsSolution.Context.AssemblyInfoInputs.cache
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\obj\Debug\net6.0\EventsSolution.Context.AssemblyInfo.cs
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\obj\Debug\net6.0\EventsSolution.Context.csproj.CoreCompileInputs.cache
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\obj\Debug\net6.0\EventsSolution.Context.dll
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\obj\Debug\net6.0\refint\EventsSolution.Context.dll
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\obj\Debug\net6.0\EventsSolution.Context.pdb
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\obj\Debug\net6.0\EventsSolution.Context.genruntimeconfig.cache
+C:\Data\LSNJ\EventsSolution\EventsSolution.Context\obj\Debug\net6.0\ref\EventsSolution.Context.dll
