@@ -7,10 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // constructor(private router : Router){}
-  // ngOnInit() {
-  //   this.router.navigate(['/eventsLink']);
-  // }
-  title: string = 'abhi';
+  constructor(private router : Router){}
+  ngOnInit() {
+    this.router.navigate(['/eventsList']);
+  }
+  
   
 }
