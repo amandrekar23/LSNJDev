@@ -9,13 +9,14 @@ const routes: Routes = [
   },
   {
     path:'eventdetailsList', component: EventDetailsComponent
-  },
-  {
-    path:'', redirectTo:'eventsList',pathMatch:'full'
-  },
-  {
-    path:'**', component:EventListComponent
-  },
+  }
+  // ,
+  // {
+  //   path:'', redirectTo:'eventsList',pathMatch:'full'
+  // },
+  // {
+  //   path:'**', component:EventListComponent
+  // },
 ];
 
 @NgModule({
