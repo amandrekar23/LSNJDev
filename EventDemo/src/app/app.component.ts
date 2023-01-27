@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit {
   constructor(private router : Router){}
   ngOnInit() {
-    this.router.navigate(['/eventsList']);
+    this.router.navigate(['/event']);
   }
   
   

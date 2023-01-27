@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-subtitle style="padding-left: 0px; font-size: 18px;" class="mat-body">Current Events</mat-card-subtitle>
+    </mat-card-header>
+    <div class="col-md-3" *ngFor="let card of events">
+        <mat-card-actions>
+            <button class="mat-body" style="padding-left: 5px" mat-flat-button (click)="ShowEventDetails(card)">{{card.title}}</button>
+        </mat-card-actions>
+        <mat-card-content style="padding-left: 10px" class="mat-body">{{card.date | date:'mediumDate'}}</mat-card-content>
+    </div>
+  </mat-card>

@@ -1,0 +1,6 @@
+mat-card-content {
+    color: white;
+    font-size: 20px;
+    justify-content: left;
+    display: flex;
+  }

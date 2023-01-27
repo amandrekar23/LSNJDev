@@ -1,1 +1,4 @@
-<span>{{title}}</span>
+<h1 style="text-align:center">{{title}}</h1>
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+    <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>

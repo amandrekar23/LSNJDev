@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-subtitle style="padding-left: 0px; font-size: 18px;" class="mat-body">Event Details</mat-card-subtitle>
+    </mat-card-header>
+    <div class="col-md-3">
+        <mat-card-content style="padding-left: 10px;color: white;" class="mat-body">{{eventDetails.title}}</mat-card-content>
+        <mat-card-content style="padding-left: 10px;color: white;" class="mat-body">{{eventDetails.date | date:'mediumDate'}}</mat-card-content>
+        <mat-card-content style="padding-left: 10px;color: white;" class="mat-body">{{eventDetails.description}}</mat-card-content>
+        <mat-card-content style="padding-left: 10px;color: white;" class="mat-body">{{eventDetails.notes}}</mat-card-content>
+    </div>
+  </mat-card>
+  <br>
+<button style="margin-left: 10px" (click)="ShowEventsList()">Back to the list</button>

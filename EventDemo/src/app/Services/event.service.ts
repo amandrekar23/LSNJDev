@@ -19,6 +19,7 @@ export class EventService {
     //     ID: '1', Title: 'Preety', Date: '29/02/1988'
     //   }
     // ];
+    console.log("into service");
     return this.http.get<Event[]>(this.baseURL);
   }
 }

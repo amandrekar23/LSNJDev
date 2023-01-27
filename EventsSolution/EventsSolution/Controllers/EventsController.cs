@@ -19,13 +19,14 @@ namespace EventsSolution.Controllers
 		[HttpGet]
 		public ActionResult<IEnumerable<Event>> GetAllEvents()
 		{
-			List<Event> eventsList = new List<Event>();
+			//List<Event> eventsList = new List<Event>();
 			IEnumerable<Event> allEvents = _eventsRepository.GetAllEvents();
-			foreach (var e in allEvents)
-			{
-				eventsList.Add(new Event { Id = e.Id, Title = e.Title, Date = e.Date });
-			}
-			return eventsList;
+			//foreach (var e in allEvents)
+			//{
+			//	eventsList.Add(new Event { Id = e.Id, Title = e.Title, Date = e.Date });
+			//}
+			//return eventsList;
+			return allEvents.ToList();
 		}
 
 		[HttpGet("{id}")]

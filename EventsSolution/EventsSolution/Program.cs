@@ -3,18 +3,42 @@ using EventsSolution.Repository.Interface;
 using EventsSolution.Repository.Implementations;
 using Microsoft.EntityFrameworkCore;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using EventsSolution;
+
+var configManager = new ConfigurationBuilder()
+	.AddJsonFile("appsettings.json", false, true)
+	.AddEnvironmentVariables()
+	.Build();
+var settings = configManager.GetRequiredSection("Settings").Get<Settings>();
+var allowedOrigin = settings?.AllowedOrigin;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+//var AllowSpecificOrigins = "_AllowSpecificOrigins";
+//builder.Services.AddCors(options =>
+//{
+//	options.AddPolicy(name: MyAllowSpecificOrigins,
+//					  policy =>
+//					  {
+//						  policy.WithOrigins("http://localhost:4200");
+//						  policy.WithHeaders("*.*");
+//					  });
+//});
 builder.Services.AddCors(options =>
 {
-	options.AddPolicy(name: MyAllowSpecificOrigins,
-					  policy =>
-					  {
-						  policy.WithOrigins("http://localhost:4200");
-					  });
+	options.AddDefaultPolicy(
+		builder =>
+		{
+			builder
+			//.WithOrigins("http://localhost:4200")
+			.WithOrigins(allowedOrigin)
+			.SetIsOriginAllowedToAllowWildcardSubdomains()
+			.SetIsOriginAllowed((host) => true)
+			.AllowAnyMethod()
+			.AllowAnyHeader()
+			.AllowCredentials();
+		});
 });
 
 builder.Services.AddControllers();
@@ -37,7 +61,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
-app.UseCors(MyAllowSpecificOrigins);
+//app.UseCors(AllowSpecificOrigins);
+app.UseCors();
 
 app.UseAuthorization();
 
